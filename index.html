@@ -150,80 +150,70 @@
             </p>
           </div>
 
-          <div class="mission-selector reveal" role="tablist" aria-label="Mission demos">
-            <button id="mission-selector-math" class="mission-selector-button is-selected" type="button" role="tab" aria-selected="true" aria-controls="mission-math" data-mission-select="math">01 <span>Math</span></button>
-            <button id="mission-selector-affirmations" class="mission-selector-button" type="button" role="tab" aria-selected="false" aria-controls="mission-affirmations" data-mission-select="affirmations">02 <span>Affirmations</span></button>
-          </div>
-
-          <div id="mission-math" class="mission-showcase" role="tabpanel" aria-labelledby="mission-selector-math" data-mission-panel="math">
-            <div class="mission-showcase-grid">
-              <article class="mission-brief reveal">
-                <div class="mission-brief-topline">
-                  <span>Mission 01</span>
-                  <span>Brain</span>
+          <div class="mission-stack">
+            <article class="mission-showcase mission-showcase-math reveal" aria-labelledby="mission-math-title">
+              <div class="mission-showcase-grid">
+                <div class="mission-brief">
+                  <div class="mission-brief-topline">
+                    <span>Mission 01</span>
+                    <span>Brain</span>
+                  </div>
+                  <div class="mission-symbol" aria-hidden="true">÷</div>
+                  <h3 id="mission-math-title">Math mission</h3>
+                  <p class="mission-summary">
+                    Solve a short problem before the alarm can be dismissed. It is
+                    a calm way to bring focus online before the day begins.
+                  </p>
+                  <ol class="mission-steps">
+                    <li><span>01</span>Read the problem on the alarm screen.</li>
+                    <li><span>02</span>Enter the answer while you are awake enough to think.</li>
+                    <li><span>03</span>Finish the mission and start the morning.</li>
+                  </ol>
                 </div>
-                <div class="mission-symbol" aria-hidden="true">÷</div>
-                <h3>Math mission</h3>
-                <p class="mission-summary">
-                  Solve a short problem before the alarm can be dismissed. It is
-                  a calm way to bring focus online before the day begins.
-                </p>
-                <ol class="mission-steps">
-                  <li><span>01</span>Read the problem on the alarm screen.</li>
-                  <li><span>02</span>Enter the answer while you are awake enough to think.</li>
-                  <li><span>03</span>Finish the mission and start the morning.</li>
-                </ol>
-              </article>
 
-              <figure class="mission-video-panel reveal">
-                <div class="mission-video-glow" aria-hidden="true"></div>
-                <video class="mission-video" autoplay muted playsinline preload="metadata" poster="./assets/math-mission-parallax-poster.jpg" aria-label="Dawnify math mission in action">
-                  <source src="./assets/math-mission-parallax.webm" type="video/webm; codecs=vp9" />
-                  <source src="./assets/math-mission-parallax.mp4" type="video/mp4" />
-                  Your browser does not support this mission preview.
-                </video>
-                <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the math mission play through</figcaption>
-              </figure>
-            </div>
-          </div>
+                <figure class="mission-video-panel">
+                  <div class="mission-video-glow" aria-hidden="true"></div>
+                  <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/math-mission-parallax-poster.jpg" aria-label="Dawnify math mission in action">
+                    <source src="./assets/math-mission-parallax.webm" type="video/webm; codecs=vp9" />
+                    <source src="./assets/math-mission-parallax.mp4" type="video/mp4" />
+                    Your browser does not support this mission preview.
+                  </video>
+                  <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the math mission play through</figcaption>
+                </figure>
+              </div>
+            </article>
 
-          <div id="mission-affirmations" class="mission-showcase" role="tabpanel" aria-labelledby="mission-selector-affirmations" data-mission-panel="affirmations" hidden>
-            <div class="mission-showcase-grid">
-              <article class="mission-brief reveal">
-                <div class="mission-brief-topline">
-                  <span>Mission 02</span>
-                  <span>Voice</span>
+            <article class="mission-showcase mission-showcase-affirmations reveal" aria-labelledby="mission-affirmations-title">
+              <div class="mission-showcase-grid">
+                <div class="mission-brief">
+                  <div class="mission-brief-topline">
+                    <span>Mission 02</span>
+                    <span>Voice</span>
+                  </div>
+                  <div class="mission-symbol mission-symbol-affirmation" aria-hidden="true">“</div>
+                  <h3 id="mission-affirmations-title">Affirmations mission</h3>
+                  <p class="mission-summary">
+                    Speak an intentional affirmation before the alarm can be
+                    dismissed. It starts the morning with your own voice.
+                  </p>
+                  <ol class="mission-steps">
+                    <li><span>01</span>Read the affirmation on the alarm screen.</li>
+                    <li><span>02</span>Speak the words clearly to confirm the mission.</li>
+                    <li><span>03</span>Finish the mission and continue your morning.</li>
+                  </ol>
                 </div>
-                <div class="mission-symbol mission-symbol-affirmation" aria-hidden="true">“</div>
-                <h3>Affirmations mission</h3>
-                <p class="mission-summary">
-                  Speak an intentional affirmation before the alarm can be
-                  dismissed. It starts the morning with your own voice.
-                </p>
-                <ol class="mission-steps">
-                  <li><span>01</span>Read the affirmation on the alarm screen.</li>
-                  <li><span>02</span>Speak the words clearly to confirm the mission.</li>
-                  <li><span>03</span>Finish the mission and continue your morning.</li>
-                </ol>
-              </article>
 
-              <figure class="mission-video-panel reveal">
-                <div class="mission-video-glow" aria-hidden="true"></div>
-                <video class="mission-video" muted playsinline preload="metadata" poster="./assets/affirmations-mission-parallax-poster.jpg" aria-label="Dawnify affirmations mission in action">
-                  <source src="./assets/affirmations-mission-parallax.webm" type="video/webm; codecs=vp9" />
-                  <source src="./assets/affirmations-mission-parallax.mp4" type="video/mp4" />
-                  Your browser does not support this mission preview.
-                </video>
-                <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the affirmations mission play through</figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="mission-reel-note reveal">
-            <p><strong>Mission reel · 02 of 05 ready</strong> Math and affirmations are ready to explore. More movement, scan, and voice mission demos will join as they are ready.</p>
-            <div class="mission-reel-track" aria-hidden="true">
-              <span class="is-active" data-mission-dot="math"></span><span data-mission-dot="affirmations"></span><span></span><span></span><span></span>
-            </div>
+                <figure class="mission-video-panel">
+                  <div class="mission-video-glow" aria-hidden="true"></div>
+                  <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/affirmations-mission-parallax-poster.jpg" aria-label="Dawnify affirmations mission in action">
+                    <source src="./assets/affirmations-mission-parallax.webm" type="video/webm; codecs=vp9" />
+                    <source src="./assets/affirmations-mission-parallax.mp4" type="video/mp4" />
+                    Your browser does not support this mission preview.
+                  </video>
+                  <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the affirmations mission play through</figcaption>
+                </figure>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -434,66 +424,5 @@
       </div>
     </footer>
 
-    <script>
-      const missionButtons = [...document.querySelectorAll("[data-mission-select]")];
-      const missionPanels = [...document.querySelectorAll("[data-mission-panel]")];
-      const missionDots = [...document.querySelectorAll("[data-mission-dot]")];
-      const missionDurations = { math: 6200, affirmations: 5100 };
-      let missionTimer;
-
-      function advanceMission(mission) {
-        const currentIndex = missionPanels.findIndex((panel) => panel.dataset.missionPanel === mission);
-        const nextPanel = missionPanels[(currentIndex + 1) % missionPanels.length];
-        selectMission(nextPanel.dataset.missionPanel);
-      }
-
-      function selectMission(mission) {
-        window.clearTimeout(missionTimer);
-
-        missionButtons.forEach((button) => {
-          const selected = button.dataset.missionSelect === mission;
-          button.classList.toggle("is-selected", selected);
-          button.setAttribute("aria-selected", String(selected));
-        });
-
-        missionPanels.forEach((panel) => {
-          const selected = panel.dataset.missionPanel === mission;
-          panel.hidden = !selected;
-          const video = panel.querySelector("video");
-          if (!video) return;
-          if (selected) {
-            video.currentTime = 0;
-            video.play().catch(() => {});
-          } else {
-            video.pause();
-          }
-        });
-
-        missionDots.forEach((dot) => {
-          dot.classList.toggle("is-active", dot.dataset.missionDot === mission);
-        });
-
-        missionTimer = window.setTimeout(() => advanceMission(mission), missionDurations[mission] || 6000);
-      }
-
-      missionButtons.forEach((button, index) => {
-        button.addEventListener("click", () => selectMission(button.dataset.missionSelect));
-        button.addEventListener("keydown", (event) => {
-          if (!['ArrowRight', 'ArrowLeft'].includes(event.key)) return;
-          event.preventDefault();
-          const nextIndex = (index + (event.key === 'ArrowRight' ? 1 : -1) + missionButtons.length) % missionButtons.length;
-          missionButtons[nextIndex].focus();
-          selectMission(missionButtons[nextIndex].dataset.missionSelect);
-        });
-      });
-
-      missionPanels.forEach((panel) => {
-        const video = panel.querySelector("video");
-        if (!video) return;
-        video.addEventListener("ended", () => advanceMission(panel.dataset.missionPanel));
-      });
-
-      selectMission("math");
-    </script>
   </body>
 </html>

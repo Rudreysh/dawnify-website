@@ -550,76 +550,45 @@ h3 {
   line-height: 1.55;
 }
 
-.mission-selector {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 0 0 24px;
+.mission-stack {
+  display: grid;
+  gap: clamp(20px, 2.6vw, 32px);
 }
 
-.mission-selector-button {
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  min-height: 42px;
-  padding: 10px 14px;
-  border: 1px solid rgba(247, 248, 241, 0.22);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(247, 248, 241, 0.66);
-  font: inherit;
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+.mission-showcase {
+  overflow: hidden;
+  padding: clamp(24px, 4.5vw, 58px);
+  border-radius: 32px;
 }
 
-.mission-selector-button span {
-  letter-spacing: normal;
-  text-transform: none;
-}
-
-.mission-selector-button:hover,
-.mission-selector-button:focus-visible,
-.mission-selector-button.is-selected {
-  border-color: var(--lime);
+.mission-showcase-math {
   background: var(--lime);
-  color: var(--green-deep);
-  outline: none;
+  box-shadow: 0 30px 64px rgba(6, 17, 8, 0.2);
 }
 
-.mission-selector-button:hover {
-  transform: translateY(-2px);
-}
-
-.mission-showcase[hidden] {
-  display: none;
+.mission-showcase-affirmations {
+  background: #f7f8f1;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.14);
 }
 
 .mission-showcase-grid {
   display: grid;
-  grid-template-columns: minmax(260px, 0.9fr) minmax(360px, 1.1fr);
-  gap: clamp(24px, 3vw, 42px);
-  max-width: 920px;
+  grid-template-columns: minmax(250px, 0.9fr) minmax(360px, 1.1fr);
+  gap: clamp(28px, 5vw, 78px);
+  max-width: 1040px;
   margin: 0;
   align-items: center;
 }
 
 .mission-brief {
-  padding: clamp(20px, 2.2vw, 28px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.055);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  max-width: 450px;
 }
 
 .mission-brief-topline {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  color: var(--lime);
+  color: rgba(16, 35, 18, 0.62);
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -633,13 +602,13 @@ h3 {
   place-items: center;
   margin: 24px 0 18px;
   border-radius: 18px;
-  background: var(--lime);
-  color: var(--green-deep);
+  background: var(--green-deep);
+  color: var(--lime);
   font-family: "Newsreader", serif;
   font-size: 2.7rem;
   font-weight: 700;
   line-height: 1;
-  box-shadow: 0 16px 38px rgba(216, 243, 109, 0.16);
+  box-shadow: 0 16px 32px rgba(15, 36, 18, 0.16);
 }
 
 .mission-symbol-affirmation {
@@ -649,7 +618,7 @@ h3 {
 
 .mission-brief h3 {
   margin-bottom: 10px;
-  color: var(--white);
+  color: var(--green-deep);
   font-family: "Newsreader", serif;
   font-size: clamp(2rem, 3vw, 2.75rem);
   letter-spacing: -0.045em;
@@ -657,7 +626,7 @@ h3 {
 
 .mission-summary {
   margin-bottom: 18px;
-  color: rgba(247, 248, 241, 0.74);
+  color: rgba(16, 35, 18, 0.74);
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -675,13 +644,13 @@ h3 {
   grid-template-columns: 24px 1fr;
   gap: 10px;
   align-items: baseline;
-  color: rgba(247, 248, 241, 0.86);
+  color: rgba(16, 35, 18, 0.86);
   font-size: 0.88rem;
   line-height: 1.4;
 }
 
 .mission-steps span {
-  color: var(--lime);
+  color: rgba(16, 35, 18, 0.62);
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -691,12 +660,12 @@ h3 {
   position: relative;
   margin: 0;
   padding: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(16, 35, 18, 0.3);
   border-radius: 26px;
   background: #030403;
   box-shadow:
-    0 34px 90px rgba(0, 0, 0, 0.42),
-    0 0 0 1px rgba(216, 243, 109, 0.05);
+    0 26px 58px rgba(15, 36, 18, 0.28),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 .mission-video-panel::before {
@@ -705,7 +674,7 @@ h3 {
   inset: -1px;
   z-index: -1;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(216, 243, 109, 0.22), transparent 38%, rgba(216, 237, 244, 0.18));
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent 38%, rgba(15, 36, 18, 0.14));
   filter: blur(22px);
   opacity: 0.74;
 }
@@ -717,7 +686,7 @@ h3 {
   width: 36%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: rgba(216, 243, 109, 0.22);
+  background: rgba(216, 243, 109, 0.28);
   filter: blur(54px);
   pointer-events: none;
 }
@@ -740,7 +709,7 @@ h3 {
   gap: 9px;
   align-items: center;
   padding: 10px 6px 2px;
-  color: rgba(247, 248, 241, 0.62);
+  color: rgba(247, 248, 241, 0.7);
   font-size: 0.76rem;
   font-weight: 700;
 }
@@ -753,46 +722,8 @@ h3 {
   box-shadow: 0 0 0 5px rgba(216, 243, 109, 0.12);
 }
 
-.mission-reel-note {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: end;
-  margin-top: 28px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.13);
-}
-
-.mission-reel-note p {
-  max-width: 650px;
-  margin: 0;
-  color: rgba(247, 248, 241, 0.66);
-  line-height: 1.55;
-}
-
-.mission-reel-note strong {
-  color: var(--white);
-}
-
-.mission-reel-track {
-  display: flex;
-  gap: 7px;
-  align-items: center;
-  flex: 0 0 auto;
-}
-
-.mission-reel-track span {
-  width: 10px;
-  height: 10px;
-  border: 1px solid rgba(247, 248, 241, 0.45);
-  border-radius: 50%;
-}
-
-.mission-reel-track .is-active {
-  width: 28px;
-  border-color: var(--lime);
-  border-radius: 999px;
-  background: var(--lime);
+.mission-showcase-affirmations .mission-video-panel {
+  order: -1;
 }
 
 .feature-grid {
@@ -1503,12 +1434,16 @@ details p {
 
   .mission-showcase-grid {
     gap: 22px;
-    max-width: 620px;
+    max-width: none;
     margin: 0;
   }
 
   .mission-brief {
-    max-width: 620px;
+    max-width: none;
+  }
+
+  .mission-showcase-affirmations .mission-video-panel {
+    order: initial;
   }
 
   .feature-grid {
@@ -1630,9 +1565,9 @@ details p {
     font-size: clamp(1.9rem, 9vw, 2.35rem);
   }
 
-  .mission-brief {
-    padding: 20px;
-    border-radius: 20px;
+  .mission-showcase {
+    padding: 24px;
+    border-radius: 24px;
   }
 
   .mission-symbol {
@@ -1650,13 +1585,6 @@ details p {
 
   .mission-video {
     border-radius: 16px;
-  }
-
-  .mission-reel-note {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 14px;
-    margin-top: 22px;
   }
 
   .how-card,
