@@ -373,7 +373,6 @@ h3 {
   }
 }
 
-.tl-dr,
 .early-adopter-panel,
 .custom-panel {
   margin-bottom: 92px;
@@ -384,7 +383,6 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.tl-dr p:last-child,
 .early-adopter-panel p,
 .custom-panel p {
   max-width: 860px;
@@ -1531,7 +1529,6 @@ details p {
     grid-template-columns: 1fr;
   }
 
-  .tl-dr,
   .early-adopter-panel,
   .custom-panel,
   .waitlist-section,
@@ -1540,7 +1537,6 @@ details p {
     border-radius: 22px;
   }
 
-  .tl-dr,
   .early-adopter-panel,
   .custom-panel,
   .how-section,
@@ -1726,7 +1722,6 @@ details p {
     font-size: 4.15rem;
   }
 
-  .tl-dr,
   .early-adopter-panel,
   .custom-panel,
   .waitlist-section,
