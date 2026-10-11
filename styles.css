@@ -392,6 +392,54 @@ h3 {
   line-height: 1.7;
 }
 
+.mission-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -20px 0 34px;
+}
+
+.mission-selector-button {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid rgba(247, 248, 241, 0.22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(247, 248, 241, 0.66);
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.mission-selector-button span {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.mission-selector-button:hover,
+.mission-selector-button:focus-visible,
+.mission-selector-button.is-selected {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: var(--green-deep);
+  outline: none;
+}
+
+.mission-selector-button:hover {
+  transform: translateY(-2px);
+}
+
+.mission-showcase[hidden] {
+  display: none;
+}
+
 .mission-showcase-grid {
   display: grid;
   grid-template-columns: minmax(280px, 0.8fr) minmax(460px, 1.2fr);
@@ -432,6 +480,11 @@ h3 {
   font-weight: 700;
   line-height: 1;
   box-shadow: 0 16px 38px rgba(216, 243, 109, 0.16);
+}
+
+.mission-symbol-affirmation {
+  padding-bottom: 18px;
+  font-size: 5rem;
 }
 
 .mission-brief h3 {
