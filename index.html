@@ -161,7 +161,7 @@
 
               <figure class="mission-video-panel reveal">
                 <div class="mission-video-glow" aria-hidden="true"></div>
-                <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/math-mission-parallax-poster.jpg" aria-label="Dawnify math mission in action">
+                <video class="mission-video" autoplay muted playsinline preload="metadata" poster="./assets/math-mission-parallax-poster.jpg" aria-label="Dawnify math mission in action">
                   <source src="./assets/math-mission-parallax.webm" type="video/webm; codecs=vp9" />
                   <source src="./assets/math-mission-parallax.mp4" type="video/mp4" />
                   Your browser does not support this mission preview.
@@ -193,7 +193,7 @@
 
               <figure class="mission-video-panel reveal">
                 <div class="mission-video-glow" aria-hidden="true"></div>
-                <video class="mission-video" muted loop playsinline preload="metadata" poster="./assets/affirmations-mission-parallax-poster.jpg" aria-label="Dawnify affirmations mission in action">
+                <video class="mission-video" muted playsinline preload="metadata" poster="./assets/affirmations-mission-parallax-poster.jpg" aria-label="Dawnify affirmations mission in action">
                   <source src="./assets/affirmations-mission-parallax.webm" type="video/webm; codecs=vp9" />
                   <source src="./assets/affirmations-mission-parallax.mp4" type="video/mp4" />
                   Your browser does not support this mission preview.
@@ -515,8 +515,18 @@
       const missionButtons = [...document.querySelectorAll("[data-mission-select]")];
       const missionPanels = [...document.querySelectorAll("[data-mission-panel]")];
       const missionDots = [...document.querySelectorAll("[data-mission-dot]")];
+      const missionDurations = { math: 6200, affirmations: 5100 };
+      let missionTimer;
+
+      function advanceMission(mission) {
+        const currentIndex = missionPanels.findIndex((panel) => panel.dataset.missionPanel === mission);
+        const nextPanel = missionPanels[(currentIndex + 1) % missionPanels.length];
+        selectMission(nextPanel.dataset.missionPanel);
+      }
 
       function selectMission(mission) {
+        window.clearTimeout(missionTimer);
+
         missionButtons.forEach((button) => {
           const selected = button.dataset.missionSelect === mission;
           button.classList.toggle("is-selected", selected);
@@ -528,13 +538,19 @@
           panel.hidden = !selected;
           const video = panel.querySelector("video");
           if (!video) return;
-          if (selected) video.play().catch(() => {});
-          else video.pause();
+          if (selected) {
+            video.currentTime = 0;
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
         });
 
         missionDots.forEach((dot) => {
           dot.classList.toggle("is-active", dot.dataset.missionDot === mission);
         });
+
+        missionTimer = window.setTimeout(() => advanceMission(mission), missionDurations[mission] || 6000);
       }
 
       missionButtons.forEach((button, index) => {
@@ -547,6 +563,14 @@
           selectMission(missionButtons[nextIndex].dataset.missionSelect);
         });
       });
+
+      missionPanels.forEach((panel) => {
+        const video = panel.querySelector("video");
+        if (!video) return;
+        video.addEventListener("ended", () => advanceMission(panel.dataset.missionPanel));
+      });
+
+      selectMission("math");
     </script>
   </body>
 </html>
