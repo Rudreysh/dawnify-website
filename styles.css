@@ -550,6 +550,81 @@ h3 {
   line-height: 1.55;
 }
 
+.mission-navigator {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 0 28px;
+}
+
+.mission-nav-link,
+.mission-nav-upcoming {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 11px 6px 7px;
+  border: 1px solid rgba(247, 248, 241, 0.18);
+  border-radius: 999px;
+  background: rgba(247, 248, 241, 0.06);
+  color: rgba(247, 248, 241, 0.85);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.mission-nav-link {
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.mission-nav-link:hover,
+.mission-nav-link:focus-visible {
+  border-color: var(--lime);
+  background: var(--lime);
+  color: var(--green-deep);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.mission-nav-link img,
+.mission-nav-upcoming img,
+.mission-nav-sky {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mission-nav-sky {
+  color: var(--green-deep);
+  background: linear-gradient(145deg, #c5efff, #68bcdf);
+}
+
+.mission-nav-sky svg {
+  width: 18px;
+  height: 18px;
+}
+
+.mission-nav-upcoming {
+  opacity: 0.63;
+}
+
+.mission-nav-upcoming small {
+  padding: 4px 6px;
+  border-radius: 999px;
+  background: rgba(247, 248, 241, 0.1);
+  color: rgba(247, 248, 241, 0.64);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .mission-stack {
   display: grid;
   gap: clamp(20px, 2.6vw, 32px);
@@ -559,6 +634,7 @@ h3 {
   overflow: hidden;
   padding: clamp(24px, 4.5vw, 58px);
   border-radius: 32px;
+  scroll-margin-top: 112px;
 }
 
 .mission-showcase-math {
