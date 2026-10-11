@@ -62,31 +62,19 @@
         </div>
 
         <div class="phone-stage reveal" aria-label="Dawnify app preview">
-          <div class="phone">
-            <div class="app-screen app-slideshow">
-              <img
-                class="app-slide app-slide-one"
-                src="./assets/awake-alarm-list.webp"
-                alt="Dawnify alarm list with scheduled morning alarms"
-                fetchpriority="high"
-              />
-              <img
-                class="app-slide app-slide-two"
-                src="./assets/awake-alarm-editor.webp"
-                alt="Dawnify alarm editor with the 6 AM wake-up time"
-              />
-              <img
-                class="app-slide app-slide-three"
-                src="./assets/awake-alarm-schedule.webp"
-                alt="Dawnify alarm schedule and wake-up mission settings"
-              />
-              <div class="slideshow-indicator" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
+          <video
+            class="hero-demo-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="./assets/dawnify-parallax-tilt-hero-poster.jpg"
+            aria-label="Dawnify app screens shown inside an iPhone"
+          >
+            <source src="./assets/dawnify-parallax-tilt-hero.webm" type="video/webm; codecs=vp9" />
+            <source src="./assets/dawnify-parallax-tilt-hero.mp4" type="video/mp4" />
+          </video>
         </div>
       </section>
 
