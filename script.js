@@ -1,1 +1,1 @@
-// Checkout and waitlist scripts were removed. Dawnify purchases are App Store only.
+// Dawnify's public-site interactions are intentionally client-side only.

@@ -2,7 +2,7 @@
 
 Public marketing site for `dawnify.app`.
 
-Dawnify Pro and lifetime access are sold only in the Apple App Store. This site does not offer a waitlist, TestFlight signup, or website checkout.
+Dawnify Pro and lifetime access are sold only in the Apple App Store.
 
 ## Files
 
@@ -12,7 +12,6 @@ Dawnify Pro and lifetime access are sold only in the Apple App Store. This site 
 - `terms.html`: terms of use
 - `support.html`: support page
 - `styles.css`: shared website styles
-- `api/waitlist.js`: retired endpoint; it returns HTTP 410
 
 ## Deploy to Vercel
 
