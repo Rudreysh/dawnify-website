@@ -159,28 +159,26 @@
               <img src="./assets/mission-affirmation.png" alt="" />
               <span>Affirmation</span>
             </a>
-            <span class="mission-nav-upcoming" aria-label="Object Hunt mission coming soon">
-              <img src="./assets/mission-object-hunt.png" alt="" />
-              <span>Object Hunt</span><small>Soon</small>
-            </span>
-            <span class="mission-nav-upcoming" aria-label="Push-ups mission coming soon">
-              <img src="./assets/mission-pushups.png" alt="" />
-              <span>Push-ups</span><small>Soon</small>
-            </span>
-            <span class="mission-nav-upcoming" aria-label="Sky Photo mission coming soon">
-              <span class="mission-nav-sky" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3.2"></circle><path d="M12 2.5v2.1M12 19.4v2.1M21.5 12h-2.1M4.6 12H2.5M18.7 5.3l-1.5 1.5M6.8 17.2l-1.5 1.5M18.7 18.7l-1.5-1.5M6.8 6.8 5.3 5.3"></path></svg>
-              </span>
-              <span>Sky Photo</span><small>Soon</small>
-            </span>
-            <span class="mission-nav-upcoming" aria-label="Bible Verse mission coming soon">
-              <img src="./assets/mission-bible-verse.png" alt="" />
-              <span>Bible Verse</span><small>Soon</small>
-            </span>
-            <span class="mission-nav-upcoming" aria-label="Make Your Bed mission coming soon">
+            <a class="mission-nav-link" href="#mission-household-item-hunt">
               <img src="./assets/mission-household-item-hunt.png" alt="" />
-              <span>Make Your Bed</span><small>Soon</small>
-            </span>
+              <span>Item Hunt</span>
+            </a>
+            <a class="mission-nav-link" href="#mission-walk">
+              <img src="./assets/mission-step.png" alt="" />
+              <span>Walk</span>
+            </a>
+            <a class="mission-nav-link" href="#mission-bible-verse">
+              <img src="./assets/mission-bible-verse.png" alt="" />
+              <span>Bible Verse</span>
+            </a>
+            <a class="mission-nav-link" href="#mission-shake">
+              <img src="./assets/mission-shake.png" alt="" />
+              <span>Shake</span>
+            </a>
+            <a class="mission-nav-link" href="#mission-scan-code">
+              <img src="./assets/mission-qr-barcode.png" alt="" />
+              <span>Scan Code</span>
+            </a>
           </div>
 
           <div class="mission-stack">
@@ -244,6 +242,166 @@
                     Your browser does not support this mission preview.
                   </video>
                   <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the affirmations mission play through</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article id="mission-household-item-hunt" class="mission-showcase mission-showcase-household reveal" aria-labelledby="mission-household-item-hunt-title">
+              <div class="mission-showcase-grid">
+                <div class="mission-brief">
+                  <div class="mission-brief-topline">
+                    <span>Mission 03</span>
+                    <span>Camera</span>
+                  </div>
+                  <div class="mission-symbol" aria-hidden="true">⌂</div>
+                  <h3 id="mission-household-item-hunt-title">Household item hunt</h3>
+                  <p class="mission-summary">
+                    Save a household item, then take a matching photo when the
+                    alarm rings. It gives you a reason to get up and look around.
+                  </p>
+                  <ol class="mission-steps">
+                    <li><span>01</span>Choose one or more household items before bed.</li>
+                    <li><span>02</span>Find the matching item when your alarm rings.</li>
+                    <li><span>03</span>Take a photo to complete the mission.</li>
+                  </ol>
+                </div>
+
+                <figure class="mission-video-panel">
+                  <div class="mission-video-glow" aria-hidden="true"></div>
+                  <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/household-item-hunt-mission-poster.jpg" aria-label="Dawnify household item hunt mission in action">
+                    <source src="./assets/household-item-hunt-mission.webm" type="video/webm; codecs=vp9" />
+                    <source src="./assets/household-item-hunt-mission.mp4" type="video/mp4" />
+                    Your browser does not support this mission preview.
+                  </video>
+                  <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the household item hunt play through</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article id="mission-walk" class="mission-showcase mission-showcase-walk reveal" aria-labelledby="mission-walk-title">
+              <div class="mission-showcase-grid">
+                <div class="mission-brief">
+                  <div class="mission-brief-topline">
+                    <span>Mission 04</span>
+                    <span>Movement</span>
+                  </div>
+                  <div class="mission-symbol" aria-hidden="true">↗</div>
+                  <h3 id="mission-walk-title">Walk mission</h3>
+                  <p class="mission-summary">
+                    Take a set number of steps to dismiss the alarm. A short
+                    walk gets your body moving before the day begins.
+                  </p>
+                  <ol class="mission-steps">
+                    <li><span>01</span>Choose the step target for your alarm.</li>
+                    <li><span>02</span>Get moving when the alarm goes off.</li>
+                    <li><span>03</span>Reach the target to finish the mission.</li>
+                  </ol>
+                </div>
+
+                <figure class="mission-video-panel">
+                  <div class="mission-video-glow" aria-hidden="true"></div>
+                  <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/walk-mission-poster.jpg" aria-label="Dawnify walk mission in action">
+                    <source src="./assets/walk-mission.webm" type="video/webm; codecs=vp9" />
+                    <source src="./assets/walk-mission.mp4" type="video/mp4" />
+                    Your browser does not support this mission preview.
+                  </video>
+                  <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the walk mission play through</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article id="mission-bible-verse" class="mission-showcase mission-showcase-bible reveal" aria-labelledby="mission-bible-verse-title">
+              <div class="mission-showcase-grid">
+                <div class="mission-brief">
+                  <div class="mission-brief-topline">
+                    <span>Mission 05</span>
+                    <span>Voice</span>
+                  </div>
+                  <div class="mission-symbol" aria-hidden="true">✦</div>
+                  <h3 id="mission-bible-verse-title">Bible verse mission</h3>
+                  <p class="mission-summary">
+                    Read a selected Bible verse out loud before dismissing your
+                    alarm, creating a deliberate moment before the day begins.
+                  </p>
+                  <ol class="mission-steps">
+                    <li><span>01</span>Choose the verses you want to use.</li>
+                    <li><span>02</span>Read the verse shown on the alarm screen.</li>
+                    <li><span>03</span>Complete the reading and start your morning.</li>
+                  </ol>
+                </div>
+
+                <figure class="mission-video-panel">
+                  <div class="mission-video-glow" aria-hidden="true"></div>
+                  <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/bible-verse-mission-poster.jpg" aria-label="Dawnify Bible verse mission in action">
+                    <source src="./assets/bible-verse-mission.webm" type="video/webm; codecs=vp9" />
+                    <source src="./assets/bible-verse-mission.mp4" type="video/mp4" />
+                    Your browser does not support this mission preview.
+                  </video>
+                  <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the Bible verse mission play through</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article id="mission-shake" class="mission-showcase mission-showcase-shake reveal" aria-labelledby="mission-shake-title">
+              <div class="mission-showcase-grid">
+                <div class="mission-brief">
+                  <div class="mission-brief-topline">
+                    <span>Mission 06</span>
+                    <span>Motion</span>
+                  </div>
+                  <div class="mission-symbol" aria-hidden="true">≈</div>
+                  <h3 id="mission-shake-title">Shake mission</h3>
+                  <p class="mission-summary">
+                    Shake your phone vigorously a few times to turn off the
+                    alarm and bring a little movement into the first minute.
+                  </p>
+                  <ol class="mission-steps">
+                    <li><span>01</span>Set Shake as the wake-up mission.</li>
+                    <li><span>02</span>Move the phone when the alarm rings.</li>
+                    <li><span>03</span>Finish the shake count to dismiss the alarm.</li>
+                  </ol>
+                </div>
+
+                <figure class="mission-video-panel">
+                  <div class="mission-video-glow" aria-hidden="true"></div>
+                  <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/shake-mission-poster.jpg" aria-label="Dawnify shake mission in action">
+                    <source src="./assets/shake-mission.webm" type="video/webm; codecs=vp9" />
+                    <source src="./assets/shake-mission.mp4" type="video/mp4" />
+                    Your browser does not support this mission preview.
+                  </video>
+                  <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the shake mission play through</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <article id="mission-scan-code" class="mission-showcase mission-showcase-scan reveal" aria-labelledby="mission-scan-code-title">
+              <div class="mission-showcase-grid">
+                <div class="mission-brief">
+                  <div class="mission-brief-topline">
+                    <span>Mission 07</span>
+                    <span>Camera</span>
+                  </div>
+                  <div class="mission-symbol" aria-hidden="true">▦</div>
+                  <h3 id="mission-scan-code-title">Scan code mission</h3>
+                  <p class="mission-summary">
+                    Scan a specific QR code or barcode to turn the alarm off.
+                    Place it away from bed and make the first step count.
+                  </p>
+                  <ol class="mission-steps">
+                    <li><span>01</span>Save the code you want to scan.</li>
+                    <li><span>02</span>Walk to it when the alarm begins.</li>
+                    <li><span>03</span>Scan the code to complete the mission.</li>
+                  </ol>
+                </div>
+
+                <figure class="mission-video-panel">
+                  <div class="mission-video-glow" aria-hidden="true"></div>
+                  <video class="mission-video" autoplay muted loop playsinline preload="metadata" poster="./assets/scan-code-mission-poster.jpg" aria-label="Dawnify scan code mission in action">
+                    <source src="./assets/scan-code-mission.webm" type="video/webm; codecs=vp9" />
+                    <source src="./assets/scan-code-mission.mp4" type="video/mp4" />
+                    Your browser does not support this mission preview.
+                  </video>
+                  <figcaption><span class="mission-status-dot" aria-hidden="true"></span>Watch the scan code mission play through</figcaption>
                 </figure>
               </div>
             </article>

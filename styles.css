@@ -637,12 +637,17 @@ h3 {
   scroll-margin-top: 112px;
 }
 
-.mission-showcase-math {
+.mission-showcase-math,
+.mission-showcase-household,
+.mission-showcase-bible,
+.mission-showcase-scan {
   background: var(--lime);
   box-shadow: 0 30px 64px rgba(6, 17, 8, 0.2);
 }
 
-.mission-showcase-affirmations {
+.mission-showcase-affirmations,
+.mission-showcase-walk,
+.mission-showcase-shake {
   background: #f7f8f1;
   box-shadow: 0 24px 52px rgba(0, 0, 0, 0.14);
 }
@@ -798,7 +803,9 @@ h3 {
   box-shadow: 0 0 0 5px rgba(216, 243, 109, 0.12);
 }
 
-.mission-showcase-affirmations .mission-video-panel {
+.mission-showcase-affirmations .mission-video-panel,
+.mission-showcase-walk .mission-video-panel,
+.mission-showcase-shake .mission-video-panel {
   order: -1;
 }
 
@@ -1518,7 +1525,9 @@ details p {
     max-width: none;
   }
 
-  .mission-showcase-affirmations .mission-video-panel {
+  .mission-showcase-affirmations .mission-video-panel,
+  .mission-showcase-walk .mission-video-panel,
+  .mission-showcase-shake .mission-video-panel {
     order: initial;
   }
 
