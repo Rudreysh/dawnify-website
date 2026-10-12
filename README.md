@@ -2,7 +2,7 @@
 
 Public marketing site for `dawnify.app`.
 
-Dawnify Pro and lifetime access are sold only in the Apple App Store.
+Dawnify offers Monthly and Yearly subscriptions through the Apple App Store.
 
 ## Files
 
