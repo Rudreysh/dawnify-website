@@ -588,26 +588,24 @@ h3 {
   transform: translateY(-2px);
 }
 
-.mission-nav-link img,
-.mission-nav-upcoming img,
-.mission-nav-sky {
+.mission-nav-icon {
   display: grid;
-  width: 30px;
-  height: 30px;
-  flex: 0 0 30px;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
   place-items: center;
-  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #11170f;
+  border-radius: 50%;
+  background: #11170f;
+}
+
+.mission-nav-icon img {
+  display: block;
+  width: 120%;
+  height: 120%;
+  max-width: none;
   object-fit: cover;
-}
-
-.mission-nav-sky {
-  color: var(--green-deep);
-  background: linear-gradient(145deg, #c5efff, #68bcdf);
-}
-
-.mission-nav-sky svg {
-  width: 18px;
-  height: 18px;
 }
 
 .mission-nav-upcoming {
